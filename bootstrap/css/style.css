@@ -12,22 +12,81 @@ body{
     position: relative;
     padding-bottom: 380px;
     background-color: beige;
+    min-height: 100vh;
 }
 
-nav{
-    background-color: antiquewhite;
+.navbar{
+    background: rgb(230,176,170);
+    background: linear-gradient(270deg, 
+    rgba(230,176,170,1) 22%, 
+    rgba(250,219,216,1) 47%, 
+    rgba(232,218,239,1) 66%, 
+    rgba(232,218,239,1) 67%);
 }
+
+.titulos{
+    font-size: italic;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.texto{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn:hover {
+    background-color: #C39BD3;
+    color: black;
+}
+
+.medio{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+section p{
+    text-align: center;
+}
+
+section div{
+    /* position: absolute;
+    top: 300%; */
+    /* left: 10%; */
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medio .centro .foto{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    width: 20%;
+    left: 800px;
+}
+
 
 .pie-pagina{
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
+    margin-bottom: 0%;
     width: 100%;
-    background-color: blue;
+    align-self: flex-end;
+    background: rgb(40,116,166);
+    background: radial-gradient(circle,
+    rgba(40,116,166,1) 64%,
+    rgba(21,67,96,1) 91%);
 }
 
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1300px;
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -44,13 +103,14 @@ nav{
 }
 
 .pie-pagina .grupo-1 .box figure img{
-    width: 110px;
+    width: 50%;
 }
 
 .pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
+    color: #efefef;
+    margin-bottom: 5%;
+    font-size: 80%;
+    margin-top: 2%; 
 }
 
 .pie-pagina .grupo-1 .box p{
@@ -66,24 +126,29 @@ nav{
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: rgb(32, 53, 112);
+    background-color: #154360;
     text-align: center;
     transition: all 300ms ease;
 }
-
+/* esto es de la animacion */
 .pie-pagina .grupo-1 .red-social a:hover{
     color: blue;
 }
 
 .pie-pagina .grupo-2{
-    background-color: blue;
+    background: rgb(40,116,166);
+    background: radial-gradient(circle,
+    rgba(40,116,166,1) 64%,
+    rgba(21,67,96,1) 91%);
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
+
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+
 @media screen and (max-width:300px) {
     .pie-pagina .grupo-1{
         width: 90%;
